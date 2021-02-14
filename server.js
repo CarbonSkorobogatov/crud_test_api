@@ -10,6 +10,7 @@ let listgoods = fs.readFileSync('./goods.json');
 let goods = [];
 goods = JSON.parse(listgoods);
 
+
 app.use(jsonParser);
 
 app.post('/admin', (req, res) => {
